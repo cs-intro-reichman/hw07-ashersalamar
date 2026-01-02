@@ -19,9 +19,9 @@ public class Binomial {
 	
 	// Computes the Binomial function, efficiently
 	public static int binomial(int n, int k) {
-		int [][] memo = new int[n][k];
-		for (int i = 0; i < n; i++) {
-    		for (int j = 0; j < k; j++) {
+		int [][] memo = new int[n+1][k+1];
+		for (int i = 0; i <= n; i++) {
+    		for (int j = 0; j <= k; j++) {
         		memo[i][j] = -1;
     		}
 		}
